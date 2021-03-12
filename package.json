@@ -1,0 +1,23 @@
+{
+  "name": "smlm-patrol-app-cypress",
+  "version": "1.0.0",
+  "description": "智慧消防客户端 CYPRESS E2E 测试工程",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qcoke/smlm-patrol-app-cypress.git"
+  },
+  "author": "LIUCAN",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/qcoke/smlm-patrol-app-cypress/issues"
+  },
+  "homepage": "https://github.com/qcoke/smlm-patrol-app-cypress#readme",
+  "devDependencies": {
+    "cypress": "^6.6.0",
+    "cypress-localstorage-commands": "^1.4.1"
+  }
+}
