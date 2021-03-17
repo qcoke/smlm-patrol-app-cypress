@@ -1,4 +1,14 @@
 {
   "baseUrl": "http://hpyz1.smlm.songmingkeji.com/#/",
-  "GLOBLE_DATA": {}
+  "GLOBLE_DATA": {},
+  "env": {
+    "search": "Cypress E2E"
+  },
+  "reporter": "mochawesome",
+  "reporterOptions": {
+    "reportDir": "cyress/results",
+    "overwirte": false,
+    "html": true,
+    "json": true
+  }
 }

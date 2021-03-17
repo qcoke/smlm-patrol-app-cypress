@@ -4,7 +4,9 @@
   "description": "智慧消防客户端 CYPRESS E2E 测试工程",
   "main": "index.js",
   "scripts": {
-    "test": "cypress open"
+    "cypress:open": "cypress open",
+    "cypress:test": "cypress run -s 'cypress/integration/**/*-spec.js'",
+    "dev:coverage": "start-test start:coverage 4100 cypress:open"
   },
   "repository": {
     "type": "git",
@@ -17,7 +19,10 @@
   },
   "homepage": "https://github.com/qcoke/smlm-patrol-app-cypress#readme",
   "devDependencies": {
-    "cypress": "^6.6.0",
+    "cypress": "^6.7.1",
     "cypress-localstorage-commands": "^1.4.1"
+  },
+  "dependencies": {
+    "start-server-and-test": "^1.12.0"
   }
 }
