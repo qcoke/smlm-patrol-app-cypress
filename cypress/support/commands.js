@@ -25,6 +25,15 @@
 // Cypress.Commands.overwrite("visit", (originalFn, url, options) => { ... })
 let LOCAL_STORAGE_MEMORY = {};
 
+Cypress.Commands.add("setRightAccound", () => {
+  const username = "admin";
+  const password = "123456";
+  cy.get('.u-input[data-cy="username"] .uni-input-input').clear();
+  cy.get('.u-input[data-cy="password"] .uni-input-input').clear();
+  cy.get('.u-input[data-cy="username"] .uni-input-input').type(username);
+  cy.get('.u-input[data-cy="password"] .uni-input-input').type(password);
+});
+
 Cypress.Commands.add("saveLocalStorageCache", () => {
   Object.keys(localStorage).forEach(key => {
     LOCAL_STORAGE_MEMORY[key] = localStorage[key];

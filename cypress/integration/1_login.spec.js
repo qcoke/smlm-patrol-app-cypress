@@ -19,8 +19,12 @@ describe('系统登录界面', () => {
 
   it('测试正确账号登陆', () => {
     cy.pause();
-    cy.get('.u-input[data-cy="password"] .uni-input-input').clear();
-    cy.get('.u-input[data-cy="password"] .uni-input-input').type(password_right);
+    // 未使用 commands 版本
+    // cy.get('.u-input[data-cy="password"] .uni-input-input').clear();
+    // cy.get('.u-input[data-cy="password"] .uni-input-input').type(password_right);
+    // 使用 commands
+    cy.setRightAccound();
+
     cy.get('uni-button[data-cy="login_btn"]').click();
     cy.get('.grid-title').should('contain', '功能中心');
     expect(localStorage.getItem('GLOBLE_DATA')).to.not.equal(null||undefined);
