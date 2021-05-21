@@ -20,8 +20,5 @@
   "homepage": "https://github.com/qcoke/smlm-patrol-app-cypress#readme",
   "devDependencies": {
     "cypress": "^7.3.0"
-  },
-  "dependencies": {
-    "start-server-and-test": "^1.12.0"
   }
 }
