@@ -28,8 +28,7 @@ let LOCAL_STORAGE_MEMORY = {};
 Cypress.Commands.add("setRightAccound", () => {
   const username = "admin";
   const password = "123456";
-  cy.get('.u-input[data-cy="username"] .uni-input-input').clear();
-  cy.get('.u-input[data-cy="password"] .uni-input-input').clear();
+  cy.get('.uni-input-input').clear();
   cy.get('.u-input[data-cy="username"] .uni-input-input').type(username);
   cy.get('.u-input[data-cy="password"] .uni-input-input').type(password);
 });

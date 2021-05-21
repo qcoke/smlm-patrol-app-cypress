@@ -5,6 +5,8 @@
     "search": "Cypress E2E"
   },
   "reporter": "mochawesome",
+  "viewportWidth": 320,
+  "viewportHeight": 568,
   "reporterOptions": {
     "reportDir": "cyress/results",
     "overwirte": false,
